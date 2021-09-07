@@ -23,19 +23,40 @@
         <div class="row flex-lg-row-reverse align-items-center">
 
             <div class="col-10 col-sm-8 col-lg-6">
-                <img src="team.jpg" class="d-block mx-lg-auto img-fluid">
+                <img src="team.jpg" class="d-block mx-lg-auto img-fluid" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
             </div>
 
             <div class="col-lg-6">
 
                 <h1 class="display-5 fw-bold lh-1 mb-3">Ice baths around the world</h1>
-
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar, velit sed
                     tempus fermentum, lacus sem pharetra nulla, vitae vehicula tellus dui ut neque.</p>
 
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+
+
+                <form class="row" style="margin-top: 10vh;">
+                    <div class="col-8">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+
+                    <div class="col-4" style="height: 100%; margin: auto;">
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h1>This will be a popup with different information for each WHM coach</h1>
                 </div>
             </div>
         </div>

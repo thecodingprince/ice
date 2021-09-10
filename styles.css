@@ -1,32 +1,14 @@
-/* body {
-    background-image: url("bg-ice.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-} */
-
 body,
 html {
-    height: 100vh;
-    width: 100vw;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.bg-image {
-    /* The image used */
-    background-image: url("bg-ice.jpg");
-
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-
-    /* Full height */
     height: 100%;
+    margin: 0;
+}
 
-    /* Center and scale the image nicely */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("team.jpg");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
